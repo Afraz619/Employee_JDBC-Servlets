@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Employee Application</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <center>
+    <body>
+        
+       <!--sending request to EmployeeServlet-->
+       <form action="EmployeeServlet?action=insert" method="post" >
+             <h1> <div>Insert the Details</div></h1>
+        <table style="with: 80%">
+                <tr>
+                    <td>First Name</td>
+                    <td><input type="text" name="firstName" required="true" /></td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td><input type="text" name="lastName" required="true"/></td>
+                </tr>
+                <tr>
+                    <td>UserName</td>
+                    <td><input type="text" name="username" required="true"/></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="password" required="true"/></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><input type="text" name="address" required="true"/></td>
+                </tr>
+                <tr>
+                    <td>Contact No</td>
+                    <td><input type="text" name="contact" required="true"/></td>
+                </tr>
+            </table>
+            <input type="submit" value="insert" id="insert" />
+     
+       <a href="EmployeeServlet?action=display" id="atag"><button>Display</button></a> 
+        </form>
+    </body>
+    </center>
+</html>
+<!--Employee Name	<input type="text" name="emp_name"  required="true" /><br><br>
+    Employee Address	<input type="text" name="emp_add" required="true" /><br><br>
+  Employee Salary	<input type="text" name="emp_sal"  required="true"/><br><br>
+        <input type="submit" value="insert" id="insert" /><br><br> -->
+        </form>
